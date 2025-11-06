@@ -1,0 +1,53 @@
+⿡ Difference between path.join() and path.resolve()
+
+path.join() → joins path segments to form a relative path.
+
+path.resolve() → resolves path segments into an absolute path.
+
+join() works left to right, resolve() works right to left.
+
+resolve() uses current working directory if no absolute path is found.
+
+⿢ Parse query parameters in Node.js
+
+Use the url module to read query parameters.
+
+url.parse(req.url, true) converts the query string into an object.
+
+Commonly used in servers to get values like ?name=John&age=20.
+
+⿣ Synchronous vs Asynchronous fs methods
+
+Synchronous: Blocks further code execution until file operation completes.
+
+Asynchronous: Non-blocking, uses callback or promises.
+
+Async is faster and better for performance.
+
+Example methods: fs.readFileSync() (sync) vs fs.readFile() (async).
+
+⿤ Why nodemon is used
+
+Automatically restarts the server when code changes.
+
+Speeds up development — no need to restart manually.
+
+Used only in development, not in production.
+
+⿥ Advantages of process module
+
+Gives info and control over the current Node process.
+
+Access environment variables with process.env.
+
+Read command-line arguments with process.argv.
+
+Helps manage program exit, errors, and system data.
+
+⿦ Handling multiple routes with Node’s http module
+
+Use if / else if conditions to check req.url and req.method.
+
+Send different responses for each route (like /, /about, /contact).
+
+For complex routing, use Express.js framework.
